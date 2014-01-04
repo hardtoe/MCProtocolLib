@@ -1,7 +1,10 @@
 package ch.spacebase.mc.protocol.packet.ingame.client.entity.player;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
+import ch.spacebase.mc.protocol.packet.ingame.client.entity.ClientAnimationPacket.Animation;
 import ch.spacebase.packetlib.io.NetInput;
 import ch.spacebase.packetlib.io.NetOutput;
 import ch.spacebase.packetlib.packet.Packet;
@@ -114,7 +117,7 @@ public class ClientPlayerDigPacket implements Packet {
 		DROP_ITEM,
 		SHOOT_ARROW_OR_FINISH_EATING;
 	}
-	
+
 	public static enum Face {
 		BOTTOM,
 		TOP,
